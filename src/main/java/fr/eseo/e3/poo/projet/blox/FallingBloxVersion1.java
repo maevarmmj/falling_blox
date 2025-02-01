@@ -7,7 +7,7 @@ import fr.eseo.e3.poo.projet.blox.modele.pieces.tetrominos.Tetromino;
 import fr.eseo.e3.poo.projet.blox.vue.EcranPause;
 import fr.eseo.e3.poo.projet.blox.vue.PanneauInformation;
 import fr.eseo.e3.poo.projet.blox.vue.VuePuits;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test; // Maybe have to put it in the project
 
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
@@ -31,7 +31,7 @@ public class FallingBloxVersion1 {
     }
 
     @Test
-    public void startGame() {
+    public static void startGame() {
         puits = new Puits(15, 25);
         vuePuits = new VuePuits(puits);
         gravite = new Gravite(vuePuits);
@@ -74,7 +74,7 @@ public class FallingBloxVersion1 {
         });
     }
 
-    /*public static void main(String args[]) {
+    public static void main(String args[]) {
         FallingBloxVersion1.startGame();
-    }*/
+    }
 }
